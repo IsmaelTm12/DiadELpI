@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia de π</title>
+    <link rel="stylesheet" href="BodyPI.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>🎉 Trivia del Día de π 🎉</h1>
+        <p>Responde las preguntas sobre el número π y demuestra tus conocimientos.</p>
+        
+        <div id="quiz-container">
+            <p id="question">Cargando pregunta...</p>
+            <div id="options"></div>
+            <button id="next-btn" disabled>Siguiente</button>
+        </div>
+
+        <p id="score"></p>
+    </div>
+
+    <!-- 📌 Recuadro de créditos -->
+    <div class="credits">
+        <p><strong>Desarrolladores:</strong></p>
+        <p>🖥️ <b>Jery Caba</b> - Código de JavaScript</p>
+        <p>🎨 <b>Eduardo Martínez</b> - Diseño CSS</p>
+        <p>🛠️ <b>Reybel Beras</b> - Estructura HTML</p>
+    </div>
+
+    <audio id="correct-sound" src="C:\Users\Soy Un Auto\Downloads\CorrectL.mp3"></audio>
+    <audio id="incorrect-sound" src="C:\Users\Soy Un Auto\Downloads\error-126627.mp3"></audio>
+
+    <script src="JavaPI.js"></script>
+</body>
+</html>

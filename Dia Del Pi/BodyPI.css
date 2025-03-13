@@ -1,0 +1,92 @@
+/* Fondo con efecto */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #282c34;
+    overflow: hidden;
+    color: white;
+}
+
+/* Fondo animado */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #ff6600, #282c34);
+    animation: moveBackground 5s infinite alternate ease-in-out;
+    z-index: -1;
+}
+
+@keyframes moveBackground {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+}
+
+h1 {
+    color: #ffcc00;
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#options button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Efectos para respuestas */
+.correct {
+    background-color: #28a745 !important;
+    color: white;
+}
+
+.incorrect {
+    background-color: #dc3545 !important;
+    color: white;
+}
+
+#next-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#next-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#next-btn:hover:not(:disabled) {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}
